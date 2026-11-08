@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>PartyPulse - Play Together on Your Phone</title>
+    
+    <!-- Mobile PWA Meta -->
+    <meta name="theme-color" content="#7c3aed" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="PartyPulse" />
+    <meta name="description" content="Free mobile-first online multiplayer party game with friends. No TV needed!" />
+    
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/icons/icon.svg" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    
+    <!-- Prevent drag refresh / bounce on mobile Safari & Chrome -->
+    <style>
+      html, body {
+        overscroll-behavior: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-white min-h-screen select-none font-sans antialiased overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Register service worker for PWA support
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(err => {
+            console.log('SW registration failed:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

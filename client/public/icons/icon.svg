@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bg)"/>
+  <!-- Gamepad icon -->
+  <g transform="translate(96, 116)" fill="#ffffff" filter="url(#shadow)">
+    <path d="M260 40H60C26.9 40 0 66.9 0 100v80c0 33.1 26.9 60 60 60h24l20 40h40l20-40h96c33.1 0 60-26.9 60-60v-80c0-33.1-26.9-60-60-60zm-180 90H60v-20h20v20zm0-40H60V70h20v20zm40 40h-20v-20h20v20zm0-40h-20V70h20v20zm140 30c-11 0-20-9-20-20s9-20 20-20 20 9 20 20-9 20-20 20zm40-30c-11 0-20-9-20-20s9-20 20-20 20 9 20 20-9 20-20 20z"/>
+  </g>
+</svg>

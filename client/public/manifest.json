@@ -1,0 +1,18 @@
+{
+  "short_name": "PartyPulse",
+  "name": "PartyPulse - Online Multiplayer Party Game",
+  "description": "Free mobile party games with your friends. Play together from your own phone!",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#090d16",
+  "theme_color": "#7c3aed",
+  "display": "standalone",
+  "orientation": "portrait"
+}
