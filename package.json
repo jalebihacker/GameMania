@@ -9,7 +9,7 @@
     "build": "npm --prefix client run build",
     "test": "npm --prefix server test",
     "start": "npm --prefix server start",
-    "install:all": "npm install && npm --prefix server install && npm --prefix client install"
+    "install:all": "npm install --include=dev && npm --prefix server install --include=dev && npm --prefix client install --include=dev"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
